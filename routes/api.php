@@ -66,5 +66,5 @@ Route::get('/password/reset/{token}', function ($token) {
     // Esta ruta normalmente redirige a una vista de restablecimiento de contraseña.
     // Si no la necesitas, simplemente devuelve el token en la respuesta.
     return response()->json(['token' => $token]);
-})->name('password.reset');
+})->name('password.reset'); 
 
